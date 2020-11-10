@@ -1,0 +1,51 @@
+style.css
+body{
+position: relative;
+right:50px;
+}
+#pattren{
+	position : relative;
+ top:30px;} 
+ #Nar{
+ display: inline;
+ position : relative;
+ top:30px;
+ right :60px;
+ }
+ 
+ .area{
+ font-size:x-large;
+ display: inline;
+ background-color:#DEB887;
+ width: 20px;
+  padding: 10px 20px 10px 20px;
+  color : white;
+  border: 8px;
+  margin : 0px;
+}
+#mass {
+position : relative;
+ top:30px;}
+
+
+ #Nar{
+ display: inline;
+ position : relative;
+ top:30px;
+ right :60px;
+ }
+ 
+ .area{
+ font-size:x-large;
+ display: inline;
+ background-color:#DEB887;
+ width: 20px;
+  padding: 10px 20px 10px 20px;
+  color : white;
+  border: 8px;
+  margin : 0px;
+}
+#porosity {
+ position : relative;
+ top:60px;}
+</style>
