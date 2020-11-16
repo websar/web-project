@@ -6,7 +6,7 @@ session_start();
 // داله للتحقق من وجود قيمه فى جلسة username
 if(!isset($_SESSION['email'])){
 	// اذا كانت القيمه فارغه يتم الانتقال الى صفحة تسجيل الدخول
-	header("Location: login.php");
+	header("Location: log.php");
 	exit();
 }
 
