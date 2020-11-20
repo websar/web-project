@@ -32,9 +32,9 @@ require 'hairdb.php';
 // فتح جلسه
 
 
-// دالة الشرط للتحقق من ضغط زر login
+
 if(isset($_POST['login'])){
-	// تخزين الحقول فى متغيرات
+	
 	$email = $_POST['Email'];
 	$pass = $_POST['password'];
 	

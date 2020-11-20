@@ -28,7 +28,7 @@
 <li><a href="mm.html">المسامية </a></li>
 <li> <a href=""> العناية بالشعر </a>
 <ul>
-<li> <a href="problem.html"> مشاكل الشعر </a></li>
+<li> <a href="problem.php"> مشاكل الشعر </a></li>
 <li> <a href="#"> العناية بالشعر </a></li>
 </ul>
  </li>

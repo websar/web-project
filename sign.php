@@ -25,7 +25,7 @@
 	
 </br>
 	 <button type="submit" name="signup">الانضمام</button>
-	<a href = "login.php"> لدي حساب بالفعل </a>
+	<a href = "log.php"> لدي حساب بالفعل </a>
 	
 </form>
   </body>

@@ -45,7 +45,7 @@
 
 <h2> أهم مشاكل الشعر </h2>
 <h3> تساقط الشعر </h3>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/9NDcNdS/image.jpg" alt="تساقط الشعر" width="400"height="200"></a>
+<img src="https://i.ibb.co/9NDcNdS/image.jpg" alt="تساقط الشعر" width="400"height="200">
 
 <h4> ومن أهم الأسباب التي تؤدي إلى تساقط الشعر ما يلي: </h4>
 <ul>
