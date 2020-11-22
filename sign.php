@@ -115,7 +115,7 @@ a:hover {
     <input type="password" placeholder="كلمة المرور" required>
   </div>
 
-  <!-- <input type="button" class="btn" value="انشاء حساب"> -->
+
     <p class="btn" align="center"> <a href = "hhome.php" > !انشاء حساب </a></p>
 </div>
 </body>
