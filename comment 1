@@ -7,6 +7,8 @@ message TEXT not null
 // new file
 <?php 
 date_default_timezone_set('Asia/Riyadh');
+include 'dbh.inc.php' ; 
+include 'comments.inc.php';
 ?>
 <!DOCTYPE html> 
 <html> 
@@ -21,11 +23,11 @@ date_default_timezone_set('Asia/Riyadh');
 Your browser does not support the video tag. 
 </video>  //احس ذا الفيديو ماله داعي نحذفه 
 <?php
-echo "<form> 
+echo "<form method ='POST' action =' ".setCommenta($conn)." ' > 
 <input type='hidden' name='uid' value='Anonymous'> 
 <input type='hidden' name='date' value=' ".date('Y-m-d H:i:s')." '> 
 <textarea name='message'></textarea><br> 
-<button type='submit' name='submit'>Comment</button> 
+<button type='submit' name='commentSubmit'>Comment</button> 
 </form>"; 
 ?>
 </body>
