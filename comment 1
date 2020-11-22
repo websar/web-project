@@ -1,0 +1,52 @@
+CREATE TABLE comments ( 
+cid int(11) not null AUTO_INCREMENT PRIMARYKEY, 
+uid varchar(128) null, 
+date datetime not null, 
+message TEXT not null
+); 
+// new file
+<?php 
+date_default_timezone_set('Asia/Riyadh');
+?>
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Title of the document</title> 
+<link rel="stylesheet" type="text/css" href="style.css"> </head> 
+<body> 
+ <video width="320" height="240" controls> 
+<source src="movie.mp4" type="video/mp4"> 
+<source src="movie.ogg" type="video/ogg"> 
+Your browser does not support the video tag. 
+</video>  //احس ذا الفيديو ماله داعي نحذفه 
+<?php
+echo "<form> 
+<input type='hidden' name='uid' value='Anonymous'> 
+<input type='hidden' name='date' value=' ".date('Y-m-d H:i:s')." '> 
+<textarea name='message'></textarea><br> 
+<button type='submit' name='submit'>Comment</button> 
+</form>"; 
+?>
+</body>
+</head
+</html>
+
+//CSS new file
+
+textarea { 
+width: 400px; 
+height: 80px; 
+background-color: #fff; 
+resize: none; 
+}
+button { 
+width: 100px; 
+height: -30px; 
+background-color: #282828; 
+border: none; 
+color: #fff; 
+font-family: arial; 
+font-weight: 400; 
+cursor: pointer; 
+}
