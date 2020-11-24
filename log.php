@@ -32,9 +32,9 @@ body{
 .login-box h1{
   float: left;
   font-size: 60px;
-  border-bottom: 6px solid #862d2d;
+  border-bottom: 3px solid #862d2d;
   margin-bottom: 50px;
-  padding: 13px 0;
+  padding: 5px 0;
 }
 .textbox{
   width: 100%;
@@ -59,34 +59,20 @@ body{
   float: left;
   margin: 0 10px;
 }
-.btn{
+
+.btn {
+    
   width: 100%;
   background: none;
   border: 2px solid #862d2d;
-  color: #862d2d;
-  padding: 5px;
-  font-size: 38px;
+  color: #d27979; 
+  padding: 10px;
+  font-size: 50px;
   cursor: pointer;
   margin: 12px 0;
     border-radius: 1.5em;
-}
-.sign {
-    
-        padding-top: 19px;
-        color: #d27979;
-        font-family: 'Ubuntu', sans-serif;
+	 font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
-		  width: 100%;
-  background: none;
-  border: 2px solid #862d2d;
-  color: #862d2d;
-  padding: 5px;
-  font-size: 38px;
-  cursor: pointer;
-  margin: 12px 0;
-    border-radius: 1.5em;
-	
-       
       
     }
 	    a:link {
@@ -104,53 +90,58 @@ a:hover {
 </style>
 </head>
 <body>
-<div class = "all" >
-<div class="login-box">
-  <h1>تسجيل الدخول</h1>
-  <div class="textbox">
-    <i class="fas fa-envelope-square"></i>
-    <input type="text" placeholder="الايميل" required>
-  </div>
 
-  <div class="textbox">
-    <i class="fas fa-lock"></i>
-    <input type="password" placeholder="كلمة المرور" required>
-  </div>
-
-  <p  class="sign" align="center"> <a href = "hhome.php"> تسجيل الدخول </a> </p>
-  <p class="sign" align="center"> <a href = "sign.php" > !انشاء حساب </a></p>
+<form method="post" >
+<div class = "login-box">
+<h1>تسجيل الدخول</h1>
+<div class="textbox" >
+<i class="fas fa-envelope-square"></i>
+  <input type="email" name="email" placeholder="الايميل " /><br />
 </div>
+
+<div class="textbox">
+<i class="fas fa-lock"></i>
+   <input type="password" name="password" placeholder="كلمة السر" /><br />
+   </div>
+   
+   <button type="submit" class = "btn"name="login"> تسجيل دخول </button>
+
+   <button type="submit" class="btn" name="signup" <a href = "sign.php" > !انشاء حساب </a></button>
+
+   </div>
+</form>
+
 <p> </p>
 </div>
 </body>
 </html>
 
-
 <?php
 // استدعاء ملف الاتصال بقاعدة البيانات
-require 'hairdb.php';
+require 'db.php';
 // فتح جلسه
+session_start();
 
-
-
+// دالة الشرط للتحقق من ضغط زر login
 if(isset($_POST['login'])){
-	
-	$email = $_POST['Email'];
+	// تخزين الحقول فى متغيرات
+	$user = $_POST['username'];
 	$pass = $_POST['password'];
 	
 	// انشاء استعلام
 	// فى هذا الاستعلام استخدمنا الشرط وجود اسم المستخدم وكلمة المرور
-	$qu = "select * from user where Email = '$email' && PASS = '$pass'";
+	$qu = "select * from users where username = '$user' && password = '$pass'";
 	
 	// ارسال الاستعلام والتحقق من وجود العضو
 	if(mysqli_num_rows(mysqli_query($con, $qu)) > 0){
 		// اذا تم وجود النتيجة يتم اضافة اسم العضو فى الجلسه 
-		$_SESSION['Email'] = $email;
+		$_SESSION['username'] = $user;
 		// ثم يتم الانتقال الى منطقة الاعضاء
-		header("Location: hhome.php");
+		header("Location: cp.php");
 	} else {
 		// اذا لم يتم ايجاد اى قيمه 0
-		echo 'اسم المستخدم او كلمة المرور خاطأ';
+		echo 'اسم المستخدم او كلمة المرور حطأ';
+		
 	}
 	
 	
