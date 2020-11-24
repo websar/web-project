@@ -32,13 +32,13 @@ body{
   font-size: 60px;
   border-bottom: 6px solid #862d2d;
   margin-bottom: 50px;
-  padding: 13px 0;
+  padding: -3px 0;
 }
 .textbox{
   width: 100%;
   overflow: hidden;
   font-size: 40px;
-  padding: 8px 0;
+  padding: 6px 0;
   margin: 8px 0;
   border-bottom: 1px solid #862d2d;
 }
@@ -56,25 +56,16 @@ body{
   width: 80%;
   float: left;
   margin: 0 10px;
-}
-.textbo input{
-  border: none;
-  outline: none;
-  background: none;
-  color: #d27979;
-  font-size: 38px;
-  width: 80%;
-  float: left;
-  margin: 0 10px;
+
 }
 
 .btn{
   width: 100%;
   background: none;
   border: 2px solid #862d2d;
-  color: #d27979;
-  padding: 5px;
-  font-size: 38px;
+  color: #d27979; 
+  padding: 10px;
+  font-size: 50px;
   cursor: pointer;
   margin: 12px 0;
     border-radius: 1.5em;
@@ -95,51 +86,63 @@ a:hover {
 </style>
 </head>
 <body>
- 
+
 <div class="login-box">
-  <h1>التسجيل </h1>
-  <div class="textbox">
-    <i class="fas fa-user"></i>
-    <input type="text" placeholder="الاسم الاول" required>
-  </div>
-  <div class="textbox">
-    <i class="fas fa-user"></i>
-    <input type="text" placeholder="الاسم الثاني">
-  </div>
- <div class="textbox">
-    <i class="fas fa-envelope-square"></i>
-    <input type="email" placeholder="الايميل " required>
-  </div>
-  <div class="textbox">
+<h1>  التسجيل</h1>
+	
+ <form method="post" >
+
+<div class="textbox">
+ <i class="fas fa-user"></i>
+  <input type="text"  name="username" placeholder="الاسم الاول" required /><br />
+   </div>
+	 
+   <div class="textbox">
+   <i class="fas fa-user"></i>
+  <input type="text" name="username"placeholder="الاسم الثاني" required /><br />
+   </div class="textbox">
+	 
+   <div class="textbox">
     <i class="fas fa-lock"></i>
-    <input type="password" placeholder="كلمة المرور" required>
-  </div>
-
-
-    <p class="btn" align="center"> <a href = "hhome.php" > !انشاء حساب </a></p>
+   <input type="password" name="password" placeholder="كلمة السر" required /><br />
+   </div>
+	 
+   <div class="textbox">
+    <i class="fas fa-envelope-square"></i>
+<input type="email" name="email" placeholder="الايميل " required /><br />
+   </div>
+	 
+   <div >
+   <button type="submit" class="btn" name="signup" <a href = "hhome.php" > الانضمام </a></button>
+   </div>
+	
+</form>
 </div>
-</body>
-</html>
+
+
+
 <?php
-		  
-require 'Hairdb.php';
+require 'db.php';
 
 
-
+// هنا اضفنا دالة الشرط للتحقق من ضغط زر signup
 if(isset($_POST['signup'])){
-
-		  
-	$Fname = $_POST['FirstName'];
-	$Lname = $_POST['LastName'];
+	// عند تحقق الضغط يتم تخزين حقول البيانات فى متغيرات 
+	$user = $_POST['username'];
 	$pass = $_POST['password'];
 	$email = $_POST['email'];
 	
-	$qu ="INSERT INTO user(Fname,Lname,Email,PASS) VALUEs ('$Fname','$Lname','$email','$pass')";
+	// هنا قمنا بانشاء استعلام لقاعدة البيانات لاضافة بيانات العضو الى الجدول
+	// عامود id يتم ملئه اوتوماتيكيا كما اخترنا فى البدايه
+	$qu = "insert into users (username,password,email) value ('$user','$pass','$email')";
 	
-	 
+	// التحقق من نجاح الاستعلام 
 	if(mysqli_query($con, $qu)){
 		echo 'تم انشاء الحساب بنجاح يمكنك تسجيل الدخول الان';
 		
-	}	
+	}
+	
 }
+
 ?>
+
