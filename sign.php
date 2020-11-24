@@ -83,6 +83,12 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
+	    a:link {
+  color: #d27979 ;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 
 </style>
 </head>
@@ -104,13 +110,13 @@ a:hover {
    </div class="textbox">
 	 
    <div class="textbox">
-    <i class="fas fa-lock"></i>
-   <input type="password" name="password" placeholder="كلمة السر" required /><br />
+    <i class="fas fa-envelope-square"></i>
+<input type="email" name="email" placeholder="الايميل " required /><br />
    </div>
 	 
    <div class="textbox">
-    <i class="fas fa-envelope-square"></i>
-<input type="email" name="email" placeholder="الايميل " required /><br />
+    <i class="fas fa-lock"></i>
+   <input type="password" name="password" placeholder="كلمة السر" required /><br />
    </div>
 	 
    <div >
@@ -146,3 +152,4 @@ if(isset($_POST['signup'])){
 }
 
 ?>
+
