@@ -28,10 +28,11 @@ body{
    border-radius: 1.5em;
 }
 .login-box h1{
-  float: left;
+
+  float: center;
   font-size: 60px;
-  border-bottom: 6px solid #862d2d;
-  margin-bottom: 50px;
+  border-bottom: 3px solid #862d2d;
+  margin-bottom: 40px;
   padding: -3px 0;
 }
 .textbox{
@@ -88,7 +89,7 @@ a:hover {
 <body>
 
 <div class="login-box">
-<h1>  التسجيل</h1>
+<h1 align="center">  التسجيل</h1>
 	
  <form method="post" >
 
@@ -145,4 +146,3 @@ if(isset($_POST['signup'])){
 }
 
 ?>
-
