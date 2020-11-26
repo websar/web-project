@@ -14,7 +14,7 @@ body{
   background-color: #fafafa; 	
 }
 .login-box{
-  width: 280px;
+  width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,7 +22,7 @@ body{
   color: #d27979;
   
   width: 400px;
-  height: 530px;
+  height: 630px;
   padding: 30px;  
   border: 2px solid;
    border-radius: 1.5em;
@@ -78,6 +78,7 @@ body{
   background-color: transparent;
   text-decoration: none;
 }
+button a {color: #d27979;}
 a:hover {
   color: #862d2d;
   background-color: transparent;
@@ -101,13 +102,13 @@ a:hover {
 
 <div class="textbox">
  <i class="fas fa-user"></i>
-  <input type="text"  name="username" placeholder="الاسم الاول" required /><br />
+  <input type="text"  name="Fname" placeholder="الاسم الاول" required /><br />
    </div>
 	 
    <div class="textbox">
    <i class="fas fa-user"></i>
-  <input type="text" name="username"placeholder="الاسم الثاني" required /><br />
-   </div class="textbox">
+  <input type="text" name="Lname"placeholder="الاسم الثاني" required /><br />
+   </div>
 	 
    <div class="textbox">
     <i class="fas fa-envelope-square"></i>
@@ -120,28 +121,23 @@ a:hover {
    </div>
 	 
    <div >
-   <button type="submit" class="btn" name="signup" <a href = "hhome.php" > الانضمام </a></button>
+   <button type="submit" class="btn" name="signup">  الانضمام </button>
    </div>
-	
-</form>
-</div>
-
-
-
+	</form>
 <?php
-require 'db.php';
+require 'hairdb.php';
 
 
 // هنا اضفنا دالة الشرط للتحقق من ضغط زر signup
 if(isset($_POST['signup'])){
 	// عند تحقق الضغط يتم تخزين حقول البيانات فى متغيرات 
-	$user = $_POST['username'];
+	$Fname = $_POST['Fname'];
+	$Lname = $_POST['Lname'];
 	$pass = $_POST['password'];
 	$email = $_POST['email'];
 	
-	// هنا قمنا بانشاء استعلام لقاعدة البيانات لاضافة بيانات العضو الى الجدول
-	// عامود id يتم ملئه اوتوماتيكيا كما اخترنا فى البدايه
-	$qu = "insert into users (username,password,email) value ('$user','$pass','$email')";
+	
+	$qu = "insert into user (Fname,Lname,Email,PASS) value ('$Fname','$Lname','$email','pass')";
 	
 	// التحقق من نجاح الاستعلام 
 	if(mysqli_query($con, $qu)){
@@ -152,4 +148,15 @@ if(isset($_POST['signup'])){
 }
 
 ?>
+
+ <div >
+
+   <button class="btn" name="signup"> <a href = "log.php" > !تسجيل دخول </a> </button>
+   </div>
+</div>
+</body>
+</html>
+
+
+
 

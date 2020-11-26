@@ -1,40 +1,78 @@
+ 
+<?php
+		  
+require 'Hairdb.php';
+?>
 <!DOCTYPE html>
  <html lang="ar-sa" dir="rtl">
    
 <head>
 <title> the boeuty of natural hair </title>
 
-<link rel="stylesheet" href= "style.css">
+<link rel="stylesheet" href= "sttyy.css">
 </head>
 
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
 
+ <form action="search.php" method="POST" class ="search">
+ <input class ="insearch" type="text" name="search" placeholder="...بحث">
+ <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
+</form>
+
 </br>
 <nav>
 
 <ul>
-<li> <a href="hhome.html"> الرئيسية </a> </li>
-<li> <a href="hair type.html">أنواع الشعر </a> </li>
-<li> <a href="hair pattren.html">انماط الشعر</a>
+<li> <a href="hhome.php"> الرئيسية </a> </li>
+<li> <a href="hair type.php">أنواع الشعر </a> </li>
+<li> <a href="hair pattren.php">انماط الشعر</a>
  <ul>
- <li> <a href="hair pattren.html" >أنماط الشعر</a> </li>
-<li> <a href="stright.html" >الشعر الأملس</a> </li>
-<li> <a href="#" >الشعر المموج</a> </li>
-<li> <a href="curly.html">الشعر المجعد</a> </li>
-<li> <a href="coily.html">الشعر شديد التجعيد</a> </li>
+ <li> <a href="hair pattren.php" >أنماط الشعر</a> </li>
+<li> <a href="#" >الشعر الأملس</a> </li>
+<li> <a href="wavy.php" >الشعر المموج</a> </li>
+<li> <a href="curly.php">الشعر المجعد</a> </li>
+<li> <a href="coily.php">الشعر شديد التجعيد</a> </li>
  </ul>
  </li>
-<li><a href="mm.html">المسامية </a></li>
-<li> <a href=""> العناية بالشعر </a>
+<li><a href="mm.php">المسامية </a></li>
+<li> <a href="care.php"> العناية بالشعر </a>
 <ul>
-<li> <a href="problem.html"> مشاكل الشعر </a></li>
-<li> <a href="care.html"> العناية بالشعر </a></li>
+<li> <a href="problem.php"> مشاكل الشعر </a></li>
+<li> <a href="care.php"> العناية بالشعر </a></li>
 </ul>
  </li>
 <li> <a href="#"> أخرى </a> </li>
+<li> <a href="log.php">
+<?php 
+if(isset($_SESSION['Email'])){
+	/*$name = mysqli_query ($con,"select Fname from user where Email=");*/
+echo $_SESSION['Email'] ; }
+else{
+	echo 'تسجيل الدخول';
+}
+?> 
+ </a></li>
 </ul>
 </nav>
+<div class="search-container">
+ <?php
+ $conn=mysqli_connect("localhost","root","","searchdb");
+       $sql = "SELECT * FROM search";
+       $result = mysqli_query($conn,$sql);
+       $queryResults = mysqli_num_rows($result);
+     
+	 if ( $queryResults > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+			
+          echo "  ";
+        }
+      }
+   ?>
+</div>
+
+
+</br>
 </br>
 <h2> أنماط الشعر </h2> 
 
