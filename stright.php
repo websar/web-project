@@ -44,16 +44,21 @@ require 'Hairdb.php';
 <li> <a href="care.php"> العناية بالشعر </a></li>
 </ul>
  </li>
-<li> <a href="#"> أخرى </a> </li>
-<li> <a href="log.php">
+<<li> <a>
 <?php 
 if(isset($_SESSION['Email'])){
-	/*$name = mysqli_query ($con,"select Fname from user where Email=");*/
-echo $_SESSION['Email'] ; }
+	$sql = "SELECT Fname,Lname FROM user where Email like '$_SESSION[Email]' ";
+$result = mysqli_query($con, $sql);
+if (mysqli_num_rows($result) > 0) {
+$row = mysqli_fetch_assoc($result);
+echo "أهلاً: " . $row["Fname"]." ".$row["Lname"];
+}}
+/*تم اخذ المساعدة في هذا الكود*/
 else{
-	echo 'تسجيل الدخول';
+	
+	echo '<a href="log.php"> تسجيل الدخول </a>';
 }
-?> 
+?>  
  </a></li>
 </ul>
 </nav>

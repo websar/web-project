@@ -51,7 +51,7 @@ atext LIKE '%$search%'";
    echo "توجد" . $queryResults ."نتیجة!";
       if ( $queryResults > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-          echo " <a href= 'mm.php? title=".$row['title']."'>
+          echo " <a href= '".$row['phpName']."'>
           <div class='search-box'>
            <h3>".$row['title']."</h3>
             <p>".$row['atext']."</p>

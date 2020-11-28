@@ -1,4 +1,3 @@
- 
 <?php
 		  
 require 'Hairdb.php';
@@ -10,11 +9,50 @@ require 'Hairdb.php';
 <title> the boeuty of natural hair </title>
 
 <link rel="stylesheet" href= "sttyy.css">
-<style>
 
-</style>
+<?php
+$_SESSION['views']+=1;
+?>
+
+  <SCRIPT LANGUAGE="JavaScript">
+
+
+
+    var timerID = null
+    var timerRunning = false
+
+    function stopclock()
+    {
+        if(timerRunning)
+            clearTimeout(timerID)
+        timerRunning = false
+    }
+
+    function startclock()
+    {
+        stopclock()
+        showtime()
+    }
+
+    function showtime()
+    {
+        var now = new Date()
+        var hours = now.getHours()
+        var minutes = now.getMinutes()
+        var seconds = now.getSeconds()
+        var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+        timeValue  += ((minutes < 10) ? ":0" : ":") + minutes
+        timeValue  += ((seconds < 10) ? ":0" : ":") + seconds
+        timeValue  += (hours >= 12) ? "PM" : "AM"
+        document.clock.face.value = timeValue 
+        timerID = setTimeout("showtime()",1000)
+        timerRunning = true
+    }
+//-->
+/*هذا الكود جاهز من هذا الكود جاهز من موقع الأحمد*/
+</SCRIPT>
+  
 </head>
-
 <BODY onLoad="getLogonTime()">
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
  
@@ -45,17 +83,23 @@ require 'Hairdb.php';
 <li> <a href="care.php"> العناية بالشعر </a></li>
 </ul>
  </li>
-<li> <a href="#"> أخرى </a> </li>
-<li> <a href="log.php">
+<li> <a>
 <?php 
 if(isset($_SESSION['Email'])){
-	/*$name = mysqli_query ($con,"select Fname from user where Email=");*/
-echo $_SESSION['Email'] ; }
+	$sql = "SELECT Fname,Lname FROM user where Email like '$_SESSION[Email]' ";
+$result = mysqli_query($con, $sql);
+if (mysqli_num_rows($result) > 0) {
+$row = mysqli_fetch_assoc($result);
+echo "أهلاً: " . $row["Fname"]." ".$row["Lname"];
+}}
+/*تم اخذ المساعدة في هذا الكود*/
 else{
-	echo 'تسجيل الدخول';
+	
+	echo '<a href="log.php"> تسجيل الدخول </a>';
 }
 ?> 
- </a></li>
+</a>
+ </li>
 </ul>
 </nav>
 
@@ -146,8 +190,24 @@ else{
 </div>
 </div>
 </br>
+
+
+  <form name="clock" onSubmit="0">
+    <INPUT TYPE="text" NAME="face" SIZE=11 READONLY VALUE ="....Initializing....">
+</form>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+    startclock()
+//-->
+</SCRIPT> 
+
 <FORM><INPUT TYPE=button value="الوقت الذي قضيتة بالصفحة" onClick=getLogoffTime()></FORM>
 
+<?php
+
+echo"عدد مرات زيارة هذه الصفحة:".$_SESSION['views'];
+?>
 </body>
 </html>
 
