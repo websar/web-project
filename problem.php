@@ -8,7 +8,11 @@ require 'Hairdb.php';
    
 <head>
 <title> the boeuty of natural hair </title>
-
+<script>
+    function pageRedirect() {
+      window.location.href = "link.php"; 
+    }      
+</script>
 <link rel="stylesheet" href= "sttyy.css">
 </head>
 
@@ -184,6 +188,8 @@ else{
 <h4> في النهاية يمكن القول بأن هناك العديد من مشاكل الشعر التي تشوه مظهره وتجعل الشخص منزعج، مثل الشعر التالف والشعر الباهت 
 والمجعد وغيرها، كما يمكن القول بأن التغذية الصحية والبعد عن مصففات الشعر الحرارية والصبغات الكيميائية وتناول المكملات الغذائية من أهم طرق علاج الشعر بشكل عام. </h4>
 
+<p> </p>
+<button class = "button" type="button" onclick="pageRedirect()">اضغط هنا للمزيد من المعلومات</button>
 
 
 <h5> المراجع</h5>
