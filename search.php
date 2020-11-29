@@ -9,10 +9,13 @@
     }
    
     .search-container{
+		display:block;
+margin-left :auto;
+margin-right : auto;
       width: 900px;
       background-color: #fff;
     }
-    .search-boX{
+    .search-box{
       padding-bottom: 30px;
       width: 100%;
     }

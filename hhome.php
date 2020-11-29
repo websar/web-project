@@ -1,3 +1,4 @@
+<!-- جميع الصور التي تم أستخدامها في البروجكت قد أخذت من بنترست أو قوقل,,وفي الغالب لانعلم تنسب لحقوق من-->
 <?php
 		  
 require 'Hairdb.php';
@@ -58,21 +59,21 @@ $_SESSION['views']+=1;
 <BODY onLoad="getLogonTime()">
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
 
- <div class="sear">
+ 
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
-</div>
-</br>
+
+<br>
 <nav>
 
 <ul>
 <li> <a href="#"> الرئيسية </a> </li>
-<li> <a href="hair type.php">أنواع الشعر </a> </li>
-<li> <a href="hair pattren.php">انماط الشعر</a>
+<li> <a href="hairtype.php">أنواع الشعر </a> </li>
+<li> <a href="hairpattren.php">انماط الشعر</a>
  <ul>
- <li> <a href="hair pattren.php" >أنماط الشعر</a> </li>
+ <li> <a href="hairpattren.php" >أنماط الشعر</a> </li>
 <li> <a href="stright.php" >الشعر الأملس</a> </li>
 <li> <a href="wavy.php" >الشعر المموج</a> </li>
 <li> <a href="curly.php">الشعر المجعد</a> </li>

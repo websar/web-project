@@ -3,14 +3,21 @@
 
 <html dir = rtl>
 
+  
 <head>
+<title> the boeuty of natural hair </title>
 
-<title>  
- </title>
+<link rel="stylesheet" href= "sttyy.css">
+<style>
+ body{
+      background-color: #f3f3f3;
+      font-family: arial;
+    }
+	</style>
+</head>
  
 
-</head>
-
+<div class="body">
 <body>
 <h1> الشعر هو تاج الجمال، ولا توجد أنثى لا تهتم بشعرها وبجماله ورونقه. </h1>
 <h2> نصائح عامة للحصول على شعر قوى وغير تالف   </h2>
@@ -29,12 +36,13 @@
 <li>الإضطرابات التي تحدث في الهرمونات والخسارة المفاجئة في الوزن قد يتسببان في تساقط الشعر. </li>
 <li> لا أحد بالعالم يمتلك شعر تام الإستقامة وإنما لابد من ميل وإنحراف بالشعر ولكن بمقدار مختلف من شخص لأخر.</li>
 <li> متوسط عدد الشعيرات في فروة الرأس حوالي 100.000 شعرة. </li>
+</ul> 
 
-
-
+ <button class = "button" type="button"><a href = "problem.php" > العودة </a> </button>
 
 
 </ul>
+</div>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
- 
+ <!-- جميع الصور التي تم أستخدامها في البروجكت قد أخذت من بنترست أو قوقل,,وفي الغالب لانعلم تنسب لحقوق من-->
 <?php
 		  
 require 'Hairdb.php';
@@ -16,23 +16,23 @@ require 'Hairdb.php';
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
 
-<div class="sear">
+
 
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
-</div>
 
-</br>
+
+<br>
 <nav>
 
 <ul>
 <li> <a href="hhome.php"> الرئيسية </a> </li>
-<li> <a href="hair type.php">أنواع الشعر </a> </li>
-<li> <a href="hair pattren.php">انماط الشعر</a>
+<li> <a href="hairtype.php">أنواع الشعر </a> </li>
+<li> <a href="hairpattren.php">انماط الشعر</a>
  <ul>
- <li> <a href="hair pattren.php" >أنماط الشعر</a> </li>
+ <li> <a href="hairpattren.php" >أنماط الشعر</a> </li>
 <li> <a href="stright.php" >الشعر الأملس</a> </li>
 <li> <a href="wavy.php" >الشعر المموج</a> </li>
 <li> <a href="curly.php">الشعر المجعد</a> </li>
@@ -81,8 +81,8 @@ else{
 </div>
 
 <div class="body">
-</br>
-</br> <div class="type">
+<br>
+<br> <div class="type">
 <h1> أفضل الطرق في العناية بالشعر </h1>
 <p>
 يعطي الشعر الجميل للفتاة جاذبية خاصة، ومن البديهي القول بأن منتجات الشعر التي تباع في محلات السوبر ماركت ليست كلها ذات نوعية جيدة، وغالبية الفتيات هنّ حذرات دائمًا بالتعامل مع أنواع الشامبو التي تنظف فروة الرأس. لذلك كان لا بد من أن تعرفي كيفية العناية بالشعر ليظل شعرك مفعمًا بالحيوية، واللمعان، ويبدو لكل من يراه صحيًا، إضافة إلى أن تكون فروة الرأس بدون أي مشكلة من مشاكل الشعر
@@ -153,7 +153,7 @@ else{
 <li>تجنبي التوتر والضغوطات البدنية والعقلية فالإجهاد يمكن أن يسبب فقدان الشعر وهذا يعني أنك بحاجة إلى إيجاد طرق للتخلص من التوتر.</li>
 <li>عند ظهور أي مشكلة من المشاكل التي تصيب الشعر، كالقشرة، والفطريات والحكة وتساقط الشعر استشيري الطبيب المختص وتجنبي المنتجات الرائجة في الأسواق.</li>
 </ul>
-</p></div>
+</div>
     </div>
 </body>
-</head>
+</html>

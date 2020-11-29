@@ -1,4 +1,4 @@
- 
+ <!-- جميع الصور التي تم أستخدامها في البروجكت قد أخذت من بنترست أو قوقل,,وفي الغالب لانعلم تنسب لحقوق من-->
 <?php
 		  
 require 'Hairdb.php';
@@ -10,26 +10,31 @@ require 'Hairdb.php';
 <title> the boeuty of natural hair </title>
 
 <link rel="stylesheet" href= "sttyy.css">
+<script>
+    function pageRedirect() {
+      window.location.href = "link.php"; 
+    }      
+</script>
 </head>
 
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
- <div class="sear">
+
+
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
 
-</div>
-</br>
+<br>
 <nav>
 
 <ul>
 <li> <a href="hhome.php"> الرئيسية </a> </li>
-<li> <a href="hair type.php">أنواع الشعر </a> </li>
-<li> <a href="hair pattren.php">انماط الشعر</a>
+<li> <a href="hairtype.php">أنواع الشعر </a> </li>
+<li> <a href="hairpattren.php">انماط الشعر</a>
  <ul>
- <li> <a href="hair pattren.php" >أنماط الشعر</a> </li>
+ <li> <a href="hairpattren.php" >أنماط الشعر</a> </li>
 <li> <a href="stright.php" >الشعر الأملس</a> </li>
 <li> <a href="wavy.php" >الشعر المموج</a> </li>
 <li> <a href="curly.php">الشعر المجعد</a> </li>
@@ -78,8 +83,8 @@ else{
 </div>
 
 
-</br>
-</br>
+<br>
+
 <h1 class="type"> مشاكل الشعر </h1> 
 <div class="body">
   
@@ -93,7 +98,7 @@ else{
 <h2 class="type"> أهم مشاكل الشعر </h2>
 <div class="type">
 <h3> تساقط الشعر </h3> 
-<img src="https://i.ibb.co/9NDcNdS/image.jpg" alt="تساقط الشعر" width="400"height="200">
+<img src="https://i.ibb.co/9NDcNdS/image.jpg" alt="تساقط الشعر" width="400" height="200">
     
 <h4> ومن أهم الأسباب التي تؤدي إلى تساقط الشعر ما يلي: </h4>
 <ul>
@@ -128,7 +133,7 @@ else{
 <li> التهاب الجلد الدهني.</li>
 <li>العدوى.</li>
  </ul>
-<h5></h5>
+
 
 <h5> هذه المشكلة تسبب قلق وتوتر الكثير من الأشخاص خاصة عند تساقط القشرة على الأكتاف.</h5>
 
@@ -190,12 +195,14 @@ else{
 <h4> في النهاية يمكن القول بأن هناك العديد من مشاكل الشعر التي تشوه مظهره وتجعل الشخص منزعج، مثل الشعر التالف والشعر الباهت 
 والمجعد وغيرها، كما يمكن القول بأن التغذية الصحية والبعد عن مصففات الشعر الحرارية والصبغات الكيميائية وتناول المكملات الغذائية من أهم طرق علاج الشعر بشكل عام. </h4>
 
+<button class = "button" type="button" onclick="pageRedirect()">اضغط هنا للمزيد من المعلومات</button>  
+
 </div> <div class="type">
 
 <h5> المراجع</h5>
 <a href="https://mawdoo3.com/%D9%85%D8%B4%D8%A7%D9%83%D9%84_%D8%A7%D9%84%D8%B4%D8%B9%D8%B1_%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9"> 
 مشاكل الشعر المختلفة - موضوع</a>
-<p> </p>
+
 <a href="https://www.veraclinic.net/ar/%D8%A3%D9%87%D9%85-%D9%85%D8%B4%D8%A7%D9%83%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1/"> 
 مشاكل الشعر | علاج مشاكل الشعر | تجميلي</a> 
     </div> 
