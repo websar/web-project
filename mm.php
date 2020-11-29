@@ -15,13 +15,13 @@ require 'Hairdb.php';
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
 
-
+<div class="sear" >
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
 
-
+</div>
 </br>
 <nav>
 
@@ -78,12 +78,15 @@ else{
    ?>
 </div>
 
-</br>
+</br> 
+</div> 
 <div id="porosity">
-  <h1>مسامية الشعر</h1>
+  <h1 class="type">مسامية الشعر</h1>   <div class="body">
+  <div class="type">
   <h3>ما هي مسامية الشعر؟</h3>
   <h3>تشير مسامية الشعر إلى مدى قدرة الشعر على امتصاص الرطوبة والإحتفاظ بها </h3>
-<img src="https://i.ibb.co/Qmq528m/6de7fe0a-d97c-4043-aa3c-5109df0e5d42.jpg" alt="انواع المسامية" width="400"height="200"  >
+<img src="https://i.ibb.co/Qmq528m/6de7fe0a-d97c-4043-aa3c-5109df0e5d42.jpg" alt="انواع المسامية" width="400"height="200"  > 
+</div>  <div class="type">
   <h3> معرفة مسامية الشعر مهم لأختيار المنتجات المناسبة لشعرك </h3>
   <h3>نستطيع معرفة مسامية الشعر بأكثر من طريقة;
   اختبار مسامية الشعر هو أحدى الطرق المشهورة لمعرفة مسامية الشعر </h3>
@@ -91,7 +94,8 @@ else{
 يتطلب هذا الاختبار كوب من الماء وخصلة من شعرك, قومي بوضع خصلة من شعرك في الكوب وانتظري لعدة ثواني لتري موقع الخصلة في الكوب
 </h4>
 <img src="https://www.jammelah.com/wp-content/uploads/2018/07/understanding_hair_porosity_ai1-1.jpg" alt="ثلاث اكواب"
-width="400"height="200">
+width="400"height="200"> 
+</div>  <div class="type">
 <h3>الخصلة على سطح المياه:</h3>
 <img src="https://amp.jamalouki.net/uploads/richTextEditor/default_richTextEditor/8f0/08be418b2caa16f6b301f29c307e250f.jpeg" alt="خصلةعلىسطح الكأس"
 width="300"height="200">
@@ -110,7 +114,7 @@ width="300"height="200">
   <li>	الجئي مرّة في الأسبوع إلى شامبو مخصّص لتنظيف الأوساخ المتراكمة على الشعر يُعرف بـClarifying Shampoo. </li>
   <li>من المفضّل أن تستخدمي مياه تميل إلى الحرارة الدافئة عند غسل الشعر.</li>
 </ul>
-
+</div>  <div class="type">
 <h3>الخصلة في وسط المياه:</h3>
 
 <img src="https://m.jamalouki.net/uploads/richTextEditor/default_richTextEditor/c0f/e831357d0ae1a7d362c566090d4efafb.jpeg" alt="خصلة وسط الكأس"
@@ -128,7 +132,7 @@ width="300"height="200">
 <li>يمكنكِ أن تغسلي شعركِ بواسطة مياه معتدلة.</li>
 <li>استخدمي قناع لتغذية الشعر مرّة في الأسبوع.</li>
 </ul>
-
+</div>  <div class="type">
 <h3>الخصلة في كعب المياه:</h3>
 <img src="https://amp.jamalouki.net/uploads/richTextEditor/default_richTextEditor/bae/45529d566fd0910f63c958b008a3329d.jpeg" alt="خصلة اسفل الكأس"
 width="300"height="200">
@@ -148,6 +152,6 @@ width="300"height="200">
   <li>	ابتعدي عن أدوات تجفيف الشعر.</li>
   <li>	اغسلي شعركِ بواسطة مياه باردة.</li>
 </ul>
-</div>
+</div> </div>
   </body>
 </html>
