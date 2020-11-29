@@ -15,12 +15,12 @@ require 'Hairdb.php';
 
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
-
+<div class="sear">
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
-
+</div>
 
 </br>
 <nav>
@@ -82,24 +82,26 @@ else{
 </br>
 </br>
 <div id="seq">
-<h2> أنماط الشعر </h2> 
-
+<h2 class="type"> أنماط الشعر </h2> 
+<div class="body"> 
+   <div class="type">
 <h1> النمط الثالث : الشعر المجعد  Curly Hair </h1>
 <img src="https://i.ibb.co/bWG0HJh/curly.png" alt="curly">
 <p> هذا النوع من الشعر يحتوي على خصل تدور حول نفسها مثل الزنبرك و يصنف حسب درجة إلتفافه وهو يتراوح بين المموج والمجعد. وهو جاف وحسّاس جدًا ويحتاج إلى عناية كبيرة</p>
-
+</div> <div class="type">
 <h3> هناك 3 أنواع فرعية للشعر المجعد: </h3>
+</div> <div class="type">
 <h3>curly 2A</h3>
 <p>يكون مموج ويحتوي على تجعيدات عريضه وهو النوع الأكثر رطوبة من الأنواع الثلاثة، وهو سميك وصحي . </p>
- <br>
+ <br></div> <div class="type">
 <h3>curly 2B</h3>
 <p>هذا النوع اكثر عرضة للتجعيد والجفاف, وتبدأ اللولبات من فروة الرأس ..للحفاظ على شكلها اللولبي الرائع تحتاج الى ترطيب الشعر  </p>
-<br>
+<br></div> <div class="type">
 <h3>curly 2C</h3>
 <p>
 
 هذا النوع أرق من النوعين السابقين لكن خصلة الشعر أصغر، مما يجعله يبدو أكثر سماكة وتجعيداته تكون ضيقة للغاية هذه اللفائف تبدأ تشكلها من الجذور ويكون عرضة للجفاف والنفشة والكسر. ، البعض يعتبر هذا النوع من الشعر المجعد والبعض يعتبره شديد التجعيد. بدلًا من التمشيط ، الذي قد يؤدي إلى تجعد الشعر وتقصفه ، استخدمي بلسم يترك على الشعر واحرصي على ترطيب شعرك باستمرار. </p>
-<img src="https://i.ibb.co/Dw7dCCh/photo.jpg" alt="curly hair photo"height ="350" width="350">
-</div>
+<img src="https://i.ibb.co/Dw7dCCh/photo.jpg" alt="curly hair photo"height ="350" width="350"> </div>
+</div> </div>
 </body>
 </head>
