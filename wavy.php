@@ -14,12 +14,12 @@ require 'Hairdb.php';
 
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
-
+<div class="sear">
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
-
+</div>
 </br>
 <nav>
 
@@ -79,26 +79,31 @@ else{
 
 </br>
 </br>
-<h2> أنماط الشعر </h2> 
 
+<h2 class ="type"> أنماط الشعر </h2>
 
+<div class="body">
 
-<h1> النمط الثاني: الشعر المموج Wavy Hair </h1>
-<img src="https://i.ibb.co/NNN6JRf/image.png" alt="wave image">
+<div class="type">
+<h1 > النمط الثاني: الشعر المموج Wavy Hair </h1>
+<img src="https://i.ibb.co/NNN6JRf/image.png" alt="wave image" >
+    
 <p> 
 يكون الشعر المموج ما بين الشعر الأملس والمجعد. كما أنه يضفي لمعانًا أكثر من الشعر المجعد ، ولكن أقل من الشعر الأملس. كلما كثرت التموجات كلما قل لمعان الشعر. عادة ما يكون الشعر المموج أكثر عرضة للتطاير.  
-</P>
-<h3> هناك 3 أنواع فرعية للشعر المموج: </h3>
-
+</P> </div>
+<h3 class="type"> هناك 3 أنواع فرعية للشعر المموج: </h3>
+<div class="type">
 <h3> Wave 2A: </h3>
 <p> يميل لكونه مستقيماً الى حدٍ ما مع تموجات غير محددة في نهاية شعرك ,ويمكن فردة بسهولة ويمكنك الابتعاد عن كريمات ومصففات الترطيب لجعل تموجات شعرك أوضح </p>
-<br>
+<br> </div> <div class="type">
 <h3> Wave 2B </h3>
 <p> يحتوي على تجعدات أكثر وضوح وبروز ولاتبدأ من فروة الرأس ,قد يتطلب فردة مزيداً من الجهد ولكن يمكنك جعل تمويجات شعرك أكثر وضوحاً .</p>
-<br>
+<br> </div> <div class="type">
 <h3> Wave 2C:</h3>
 <p>
 هذا النوع يحتوي على شعر بتموجات واضحة وتكون أكثر قربًا لفروة الرأس ,كما انه يجمع بين الشعر "الويفي" و"الكيرلي" حيث يتجعد بسرعة في البيئة الرطبة ويتميز بكثافة وتموجات سميكة بشكل عام
 </p>
-<img src="https://i.ibb.co/bWytZCT/photo.jpg" alt="wavy hair photo" height ="350" width="350" >
+<img src="https://i.ibb.co/bWytZCT/photo.jpg" alt="wavy hair photo" height ="350" width="350" > 
+    </div> </div>
 </body>
+
