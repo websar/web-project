@@ -1,4 +1,4 @@
- 
+
 <?php
 		  
 require 'Hairdb.php';
@@ -26,13 +26,13 @@ a{
 
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
-
+ <div class="sear">
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
 
-
+</div>
 </br>
 <nav>
 
@@ -92,21 +92,24 @@ else{
 
 </br>
 <div id="pattren">
-<h1>أنماط الشعر </h1>
+<h1 class="type">أنماط الشعر </h1>  
+<div class="body"> 
+ <div class="type">
 <p>  يعد نظام نظام أندريه ووكر من أكثر الأنظمة استخدامًا لتصنيف الشعر ، وهذا النظام  تم تصميمه من قبل مصفف شعر أوبرا وينفري، أندريه ووكر ،  وفقًا لتنصيف هذا النظام  ، هناك أربعة أنواع من الشعر: 
 
 <h3>تنقسم أنماط الشعر الى أربعة أنماط, وكل نمط ينقسم أيضاً الى فئات فرعية بناءً على ضيق ووسع اللفات </h3>
 <img id="imga" src="https://i.ibb.co/LP7jYH2/dd822a46-2676-4b20-9eab-958764ebafae.jpg" alt="صور لانواع الشعر" width="200"height="400">
-</br>
-</br>
+</br> </div> 
+</br>  <div class="type">
 <h2>سنتحدث هنا عن كل نمط ,وعن كيفية العناية وطرق تصفيفه<h2>
-<br>
-<ol>
+<br> 
+<ol> <div class="type">
 <a href="stright.php"> <li>الشعر المستقيم/الستريت </li> </a>
-<a href="wavy.php"> <li> الشعر المموج/الويفي </li> </a>
-<a href="curly.php"> <li> الشعر المجعد/الكيرلي</li></a>
-<a href="coily.php"> <li>الشعر شديد التجعيد/كنكي او كويلي</li> </a>
+<a href="wavy.php" > <li> الشعر المموج/الويفي </li> </a>
+<a href="curly.php" > <li> الشعر المجعد/الكيرلي</li></a>
+<a href="coily.php" > <li>الشعر شديد التجعيد/كنكي او كويلي</li> </a></div>
 </ol>
 </div> 
+    
 </body>
 </html>
