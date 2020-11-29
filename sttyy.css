@@ -96,4 +96,44 @@ float: left;}
     font-size: 18px;
   }
    .sbutton:hover{
-   background-color :#e6e6e6; }
+   background-color :#e6e6e6; } 
+
+  
+   #yy{
+background-color:#e9e2e2; 
+width :1400px; 
+text-align:center;
+font-size:25px;
+font-weight:bolder;
+
+   }
+   #zz{
+	text-align:center;
+	padding :20px;
+
+
+   }
+   .sear{
+	background-color:#e9e2e2; 
+	text-align:center;
+	font-weight:bolder;
+	
+   }
+   .body{
+
+	border: 10px solid #e9e2e2 ; 
+	padding : 20px ;
+	margin :30px 250px  ;
+	}
+	.type{
+
+	
+
+			background-color :#e9e2e2 ;
+			margin: 70px ;
+		
+		text-align: center; 
+	
+		
+		
+	}
