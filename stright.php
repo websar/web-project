@@ -15,13 +15,13 @@ require 'Hairdb.php';
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
 
-
+<div class="sear">
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
 
-
+</div>
 </br>
 <nav>
 
@@ -81,14 +81,16 @@ else{
 
 </br>
 </br>
-<h2> أنماط الشعر </h2> 
-
+<h2 class="type"> أنماط الشعر </h2> 
+<div class="body">
+<div class="type">
 <h1>النمط الأول : الشعر الأملس Straight Hair </h1>
 <img src="https://i.ibb.co/g9R2cTX/image.png" alt="stright hair">
-<p>
+<p> </div> <div class="type">
 الشعر "الستريت" يعكس الشعر الأكثر لمعانًا وكذلك الشعر الأكثر مرونة من بين جميع أنواع الشعر ، وفي هذا النوع من الشعر عادًة ما تكون خصلة الشعر مسطحة من الجذور إلى الأطراف ويكون الشعر ناعمًا ، ولامع للغاية بفضل امكانية الزيت الطبيعي المنتج في الغدد الدهنية في فروة الرأس ان ينزلق من فروة الرأس ويصل إلى الأطراف ليحافظ على ترطيب وصحة شعرك دون تداخل تجعيد الشعر أو التواءاته .
 </p>
 <img src="https://i.ibb.co/xL1MW8f/image.jpg" alt="stright hair image" height ="350" width="350" >
-
+    </div>
+    </div>
 </body>
 </head>
