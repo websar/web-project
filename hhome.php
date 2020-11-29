@@ -2,6 +2,8 @@
 <?php
 		  
 require 'Hairdb.php';
+
+$_SESSION['views']+=1;
 ?>
 <!DOCTYPE html>
  <html lang="ar-sa" dir="rtl">
@@ -13,9 +15,6 @@ require 'Hairdb.php';
 
 <link rel="stylesheet" href= "sttyy.css">
 
-<?php
-$_SESSION['views']+=1;
-?>
 
   <SCRIPT LANGUAGE="JavaScript">
 
@@ -87,22 +86,24 @@ $_SESSION['views']+=1;
 <li> <a href="care.php"> العناية بالشعر </a></li>
 </ul>
  </li>
-<li> <a>
+<li> 
 <?php 
 if(isset($_SESSION['Email'])){
 	$sql = "SELECT Fname,Lname FROM user where Email like '$_SESSION[Email]' ";
 $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) {
 $row = mysqli_fetch_assoc($result);
-echo "أهلاً: " . $row["Fname"]." ".$row["Lname"];
+echo '<a href="" >مرحبا:'
+.$row["Fname"]." ".$row["Lname"].'</a>';
 }}
 /*تم اخذ المساعدة في هذا الكود*/
 else{
 	
-	echo '<a href="log.php"> تسجيل الدخول </a>';
+	echo '<a href="log.php" >تسجيل الدخول </a>';
+	  
 }
 ?> 
-</a>
+
  </li>
 </ul>
 </nav>
