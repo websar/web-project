@@ -26,12 +26,26 @@
       width: 100px;
       height: 44px;
       font-size: 22px;
-    }
+    } 
+    .type{
+
+	
+
+background-color :#e9e2e2 ;
+margin: 70px ;
+
+text-align: center; 
+
+
+
+}
 	
     </style>
  </head>
- <body>
-<h1> صفحة البحث </h1>
+ <body> 
+ 
+<h1 class="type"> صفحة البحث </h1>
+ 
  <div class="search-container">
  
  
