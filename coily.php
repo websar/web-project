@@ -15,13 +15,13 @@ require 'Hairdb.php';
 <body>
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
 
-
+<div class="sear">
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
 
-
+</div>
 </br>
 <nav>
 
@@ -83,10 +83,11 @@ else{
 </br>
 </br>
 
-<h2> أنماط الشعر </h2> 
-
+<h2 class ="type"> أنماط الشعر </h2> 
+<div class="body"> 
+  <div class="type">
 <h1>  النوع الرابع: الشعر شديد التجعد Kinky Hair </h1>
-<img src="https://i.ibb.co/KbnDc2R/coily.png" alt="coily">
+<img src="https://i.ibb.co/KbnDc2R/coily.png" alt="coily" >
 <p> 
 
 يمكن أن يحتوي الشعر المتعرج على مزيج من التركيبات التي تتراوح من نمط ملفوف بإحكام ، يشبه الزنبرك
@@ -95,21 +96,24 @@ else{
 لذلك يحتاج إلى عناية كبيرة، يبدو خشنًا ولكنه في الحقيقة هش وناعم تمامًا ، ويتقلص هذا النوع من الشعر بشدة. 
 
 </p>
-
+    </div>  
+    <div class="type">
 <h3> هناك 3 أنواع فرعية للشعر شديد التجعًد: </h3>
 
 <img src="https://i.ibb.co/WDpDGPG/D8-A3-D9-86-D9-88-D8-A7-D8-B9-D8-A7-D9-84-D8-B4-D8-B9-D8-B1-D8-A7-D9-84-D8-B4-D8-B9-D8-B1-D8-A7-D9-8.png" alt="KinkyHair" >
-<br>
-
-<h3> kiky 4A:</h3>
+<br> </div>
+<div class="type">
+<h3> kiky 4A:</h3> 
 <p> هذا النوع من الشعر ملفوف جيدًا من الجذور وحجمه ولفاته حلزونية كما تأخذ عادة شكلًا محددًا. هذا الشعر هش ورقيق وضعيف، ويحتاج إلى الكثير من العنايةوالترطيب<p>
-<br>
+<br> </div>  <div class="type">
 <h3> kiky 4B:</h3>
 <p> هذا الشعر تعرجاته حادة، فهي تأخذ شكل حرف Z متعرج ولا يشكل لفات لولبية او حلزونية بل تعرجات حادة فقط، وهو سهل التحديد. يمكنه ان يظهر بشكل مكثف وثقيل لكنه عكس ذلك فهو رقيق للغاية والنوع الأضعف من أنواع الشعر كلها ويحتاج الى حرص وعناية كبيرتين للحفاظ عليه . </p>
-<br>
-<h3> kiky 4C:</h3>
+<br> </div>  <div class="type">
+<h3> kiky 4C:</h3> 
 <p>وهذا النوع ملفوف لفات صغيرة جدا ,يمكن ان تكون رقيقة جدا وكثيفة و أحيانا يكون ضعيف أو هش. هذا النوع هو الأصعب للعناية؛ فهو صعب التمشيط لأن انكماشه هو الأشد من جميع الأنواع.ويحتاج هذا النوع الى الترطيب والترطيب والكثير من الترطيب..  </p>
-<br>
-<img src="https://i.ibb.co/xqvNx0x/photo.jpg" alt="coily hair photo" ="350" width="350" >
+<br> 
+<img src="https://i.ibb.co/xqvNx0x/photo.jpg" alt="coily hair photo" ="350" width="350" > 
+</div>
+    </div>
 </body>
 </head>
