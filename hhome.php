@@ -8,6 +8,8 @@ require 'Hairdb.php';
 <head>
 <title> the boeuty of natural hair </title>
 
+
+
 <link rel="stylesheet" href= "sttyy.css">
 
 <?php
@@ -55,12 +57,13 @@ $_SESSION['views']+=1;
 </head>
 <BODY onLoad="getLogonTime()">
 <img src="https://i.ibb.co/DGsxhPg/30953635-6928-48cc-ae17-975e36a31c7d.jpg" alt="the beauty of natural hair" height ="150" width="150">
- 
+
+ <div class="sear">
  <form action="search.php" method="POST" class ="search">
  <input class ="insearch" type="text" name="search" placeholder="...بحث">
  <button class ="sbutton" type="submit" name="submit-search"> بحث </button>
 </form>
-
+</div>
 </br>
 <nav>
 
@@ -119,13 +122,14 @@ else{
    ?>
 </div>
 
-
-</br>
+<div id="zz">
+</br> 
+<div id="yy">
 <h1> رسالتنا </h1>
 <p> سواء كان شعرك ناعمًا أو سميكاً أو خفيفًا,طويلاً أو قصيراً,منسدلًا أو مجعدًا ,فأن شعرك يستحق الأحترام أياً كان حاله.</p>
 <p>ولأن شعرك يستحق الحب والأحترام؛ تعرفي هنا على أنماط تجعيد شعرك ونوعه ومساميته واحتياجاته وطرق تصفيفه والعناية به .</p>
 
-
+</div>
 
 
 
@@ -191,7 +195,7 @@ else{
 </div>
 </br>
 
-
+<div class="type">
   <form name="clock" onSubmit="0">
     <INPUT TYPE="text" NAME="face" SIZE=11 READONLY VALUE ="....Initializing....">
 </form>
@@ -207,7 +211,9 @@ else{
 <?php
 
 echo"عدد مرات زيارة هذه الصفحة:".$_SESSION['views'];
-?>
+?> 
+</div>
+</div>
 </body>
 </html>
 
